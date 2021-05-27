@@ -1,0 +1,221 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("/images/texture_grid.png"), url("/images/Backgrounds/space.jpg");
+    background-repeat: repeat, no-repeat; 
+    background-size: 0.21%, cover;
+    background-attachment: fixed;
+    transition: 1s ease-in-out;
+    color: white;
+}
+#container {
+    padding: auto;
+    height: auto;
+    max-width: 1140px;
+    margin: 40px auto;
+    background-color: #161c20;
+}
+#menu_top {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: #161c20;
+    border-top: 2px solid #e44444;
+    border-bottom: 2px solid #e44444;
+}
+#menu_top #menu_features {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 14px;
+}
+#menu_top #menu_features a, a.visited {
+    color: white;
+    border-color: #e44444;
+}
+#menu_top #menu_features li {
+    display: inline;
+}
+#menu_top #menu_features li a:link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    padding: 0 20px 0 16px;
+    margin: 0;
+    border-right: 2px solid #e44444;
+}
+#menu_top #menu_features li a:link.last-link {
+    border-right: 0px;
+}
+#menu_top #menu_features li a:hover {
+    color: #e44444;
+}
+.breadcumb{
+    width: auto;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    background-color: #161c20;
+    border-bottom: 1px solid rgb(228, 68, 68, 0.6);
+    list-style-type: none;
+}
+.breadcumb li {
+    margin-left: 7px;
+    text-transform: uppercase;
+}
+.breadcumb li:first-child {
+    margin-left: 15px;
+}
+.breadcumb li a:visited, .breadcumb li a {
+    text-decoration: none;
+    color: #e44444;
+}
+.breadcumb li a:hover {
+    color: #c21212;
+}
+#menu {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+}
+#menu #logo {
+    margin: auto;
+}
+#menu #logo img {
+    width: 20%; 
+    height: 20%;
+}
+#menu #logo h1 {
+    font-weight: bolder;
+    font-stretch: ultra-expanded;
+    font-size: 40px;
+    line-height: 10px;
+}
+#menu #features {
+    list-style-type: none;
+    right: 0;
+    padding: 0;
+    
+}
+#main {
+    width: auto;
+    height: auto;
+    min-height: 300px;
+    background: #161c20;
+    padding: 1px 10px;
+    border-top: 1px solid #e44444;
+    border-bottom: 2px solid #e44444;
+}
+#main .info-table {
+    margin: 0 auto 20px;
+    border: 1px solid #e44444;
+    text-align: center;
+}
+#main .info-table th {
+    width: 200px;
+}
+#main .info-table td {
+    border: 1px solid #e44444;
+}
+#main .info-table .button-edit {
+    width: 90px;
+    margin: 5px 10px;
+    background-color: #2a40be;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#main .info-table .button-edit:hover {
+    background-color: #152aa1;
+}
+#main .info-table .button-del {
+    width: 90px;
+    margin: 5px 10px;
+    background-color: #d83232;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#main .info-table .button-del:hover {
+    background-color: #961212;
+}
+#main .button-main {
+    width: 150px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    display: list-item;
+    margin: 8px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#main .button-main:hover {
+    background-color: #3f9243;
+}
+#main a:link {
+    text-decoration: none;
+}
+input[type=text], input[type=tel], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 13px auto;
+    display: list-item;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+#main #panel {
+    width: auto;
+    height: auto;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#main #panel textarea {
+    resize: vertical;
+    width: 50%;
+    columns: 50;
+}
+/* Don Hang ------------------------------------- */
+#main #Title {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #cafa1f;
+}
+#main .user-info {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ff9d9d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+#main .user-info table {
+    word-break: break-word;
+    min-width: 300px;
+}
+#main .user-info td {
+    padding: 5px 50px 5px 0;
+}
+#main .user-info .info-text {
+    color: white;
+}
+#main #Total {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+}

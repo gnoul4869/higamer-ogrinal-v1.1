@@ -1,0 +1,413 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("/images/texture_grid.png"), url("/images/Backgrounds/aot.jpg");
+    background-repeat: repeat, no-repeat; 
+    background-size: 0.21%, cover;
+    background-attachment: fixed;
+    transition: 1s ease-in-out;
+    color: white;
+}
+* { font-family: 'Open Sans', sans-serif; }
+#container {
+    padding: auto;
+    height: auto;
+    max-width: 1140px;
+    margin: 40px auto 40px;
+    background: #161c20;
+}
+#menu_top {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 50px;
+    background-color: #161c20;
+    border-top: 1px solid #e44444;
+    border-bottom: 2px solid #e44444;
+}
+#menu_top #search_bar {
+    position: absolute;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+}
+#menu_top #search_bar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 12px;
+    border: none;
+    width: 200px;
+    outline-width: 0;
+    border-radius:0;
+}
+#menu_top #search_bar button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius:0;
+}
+#menu_top #search_bar button:hover {
+    background: #ccc;
+}
+#menu_top #reg_menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 14px;
+    position: absolute;
+    right: 0;
+}
+#menu_top #reg_menu li {
+    display: inline;
+}
+#menu_top #reg_menu .B {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+#menu_top #reg_menu li a {
+    text-decoration: none;
+}
+#menu_top #reg_menu li a:visited {
+    color: white;
+}
+#menu_top #reg_menu li a:hover {
+    color: #e44444;
+}
+#menu_top #reg_menu li button {
+    color: white;
+    font-size: 16px;
+}
+#menu_top #reg_menu .profile-dropdown {
+    display: inline;
+    position: relative;
+}
+#menu_top #reg_menu .profile-dropbtn {
+    color: white;
+    border: none;
+    background: none;
+    padding: 0 20px;
+    margin: 0;
+    font-size: 16px;
+}
+#menu_top #reg_menu .profile-dropdown-content {
+    z-index: 1;
+    display: block;
+    max-height: 0;
+    position: absolute;
+    background-color: #161c20;
+    width: max-content;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+#menu_top #reg_menu .profile-dropdown-content a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid #21292e;
+}
+#menu_top #reg_menu .profile-dropdown-content a:last-child {
+    border-bottom: 2px solid #e44444;
+}
+#menu_top #reg_menu .profile-dropdown-content a:hover {background-color: #131111;}
+#menu_top #reg_menu .profile-dropdown:hover .profile-dropdown-content {max-height: 600px;}
+#menu_top #reg_menu .profile-dropdown:hover .profile-dropbtn {color: #e44444;}
+#menu_top #reg_menu #btn_cart {
+    color: white;
+    font-size: 14px;
+    margin-right: 20px;
+}
+#menu_top #reg_menu #btn_cart {
+    cursor: pointer;
+}
+#menu_top #reg_menu li #btn_cart:hover {
+    color: #e44444;
+}
+#menu_top #reg_menu #btn_cart a:visited {
+    color: white;
+}
+#menu {
+    width: 100%;
+    height: 60px;
+    background-color: #161c20;
+    border-bottom: 2px solid #e44444;
+}
+#menu #logo {
+    position: absolute;
+    margin-left: 20px;
+}
+#menu #logo img {
+    width: 200px;
+    height: 56px;
+}
+#menu #features {
+    float: right;
+}
+#menu #features #contact {
+    display: inline;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-right: 20px;
+}
+#menu #features #contact a {
+    text-decoration:none;
+    color: white;
+}
+#menu #features #contact a:visited {
+    color: white;
+}
+#menu #features #contact a:hover {
+    color: #e44444;
+}
+#menu .dropdown {
+    display: inline;
+    position: relative;
+}
+#menu .dropbtn {
+    color: white;
+    padding: 16px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border: none;
+    background: none;
+}
+#menu .dropdown-content {
+    z-index: 1;
+    display: block;
+    max-height: 0;
+    position: absolute;
+    background-color: #161c20;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+#menu .dropdown-content a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid #21292e;
+}
+#menu .dropdown-content a:last-child {
+    border-bottom: 2px solid #e44444;
+}
+#menu .dropdown-content a:hover {background-color: #131111;}
+#menu .dropdown:hover .dropdown-content {max-height: 600px;}
+#menu .dropdown:hover .dropbtn {color: #e44444;}
+#banner {
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 15px 0;
+    border-bottom: 1px solid #e44444;
+}
+#banner .mySlides {
+    display: none;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+#banner .mySlides img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#banner #banner_btn {
+    position: absolute;
+    display: inline;
+    left: 0; 
+    right: 0; 
+    text-align: center;
+    bottom: 189px;
+}
+#banner #banner_btn .prev, .next {
+    cursor: pointer;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    text-shadow: 0 0 2px black;
+    border-radius: 3px 0 0 3px;
+}
+#banner #banner_btn .prev {
+    margin-right: 45%;
+}
+#banner #banner_btn .next {
+    margin-left: 45%;
+}
+#banner #banner_btn .prev:hover, .next:hover {
+    color: #e44444;
+}
+#banner .banner-number {
+    position: absolute;
+    display: none;
+}
+#banner .banner-text {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 1px black;
+    display: none;
+}
+#banner_control {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    text-align: center;
+    bottom: 30px;
+}
+#banner_control .banner-dot {
+    cursor: pointer;
+    height: 5px;
+    width: 25px;
+    margin: 1px;
+    background-color: #b4b4b4;
+    transition: background-color 0.6s ease;
+    display: inline-block;
+    border: 1px solid #b4b4b4;
+}
+#banner .active {
+    background-color: white;
+}
+#banner .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+} 
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+} 
+#main {
+    width: auto;
+    min-height: 600px;
+    background: #161c20;
+    border-bottom: 1px solid #e44444;
+}
+#main .section .section-title {
+    color: #e44444;
+    margin: 0 15px;
+}
+#main .section .section-title h1 {
+    overflow: hidden;
+    text-align: start;
+}  
+#main .section .section-title h1:before, .section-title h1:after {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    height: 3px;
+    width: 99.5%;
+    background-color: white;
+}
+#main .section .section-title h1:before {
+    right: 0.5em;
+    margin-left: -95%;
+}
+#main .section .section-title h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+#main .game-list {
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    grid-gap: 20px;
+    justify-content: center;
+}
+#main .game-list a, a:visited {
+    color: white;
+}
+#main .game-list .game-tag {
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#main .game-list .game-tag .price-tag {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+#main .game-list .game-tag .price-tag h2 {
+    margin: 0;
+    position: absolute;
+}
+#main .game-list .game-tag:hover {
+    box-shadow: 0 0 10px 2px #df0e5e;
+    transform: translateY(-10px);
+}
+#main #see_all {
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+#main #see_all h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: -5px;
+}
+#main #see_all a, #main #see_all a:visited {
+    text-decoration: none;
+    color: white;
+}
+#main #see_all a:hover {
+    color: #e44444;
+    transform: scale(1.05);
+}
+#footer {
+    width: auto;
+    min-height: 50px;
+    text-align: center;
+    background-color: #161c20;
+}
+#footer #copyright {
+    padding: 15px 0 15px;
+}
+@media only screen and (max-width: 1000px) {
+    #banner {
+      display: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #menu_top #search_bar input[type=text] {
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #logo {
+      display: none;
+    }
+    #menu_top #search_bar input[type=text] {
+        width: 50px;
+    }
+}

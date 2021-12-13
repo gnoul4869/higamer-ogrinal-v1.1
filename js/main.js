@@ -39,16 +39,25 @@ const backgrounds = [
     '/images/Backgrounds/sky_island.jpg',
 ];
 
+let indexRef = 0;
+
 // Auto Change Background
 function updateBG() {
     const body = document.querySelector('body');
-    const index = Math.floor(Math.random() * backgrounds.length);
+
+    let index = Math.floor(Math.random() * backgrounds.length);
+
+    while (index === indexRef) {
+        index = Math.floor(Math.random() * backgrounds.length);
+    }
 
     const image = new Image();
     image.onload = function () {
         body.style.backgroundImage = `url("/images/texture_grid.png"), url("${backgrounds[index]}")`;
     };
     image.src = backgrounds[index];
+
+    indexRef = index;
 }
 
 $(document).ready(function () {
